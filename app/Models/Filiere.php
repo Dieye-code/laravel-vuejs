@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Filiere extends Model
 {
     use HasFactory;
+    protected $guarded = ['id'];
+
+    public function departement(){
+        return $this->belongsTo(Departement::class);
+    }
 }

@@ -58,4 +58,20 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function getRoleAttribute()
+    {
+        switch ($this->role) {
+            case '1':
+                return 'super admin';
+                break;
+            case '2':
+                return 'admin';
+                break;
+
+            default:
+                return 'user';
+                break;
+        }
+    }
 }
