@@ -18,8 +18,11 @@
 </head>
 
 <body class="antialiased">
-    <div id="app"></div>
-    <universites></universites>
+    <div id="app">
+        <universites></universites>
+        <departements></departements>
+    </div>
+    
 </body>
 
 <script src="{{ asset('js/app.js') }}"></script>
