@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Universite;
 use Illuminate\Database\Seeder;
 
 class UniversiteSeeder extends Seeder
@@ -13,6 +14,10 @@ class UniversiteSeeder extends Seeder
      */
     public function run()
     {
-        //
+        for ($i=0; $i < 10; $i++) { 
+            Universite::create([
+                'nom' => "Universite ".($i+1)
+            ]);
+        }
     }
 }
