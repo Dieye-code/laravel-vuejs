@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Universite;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $universites = Universite::all();
+    return view('welcome', compact('universites'));
 });

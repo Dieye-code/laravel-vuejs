@@ -19,10 +19,9 @@
 
 <body class="antialiased">
     <div id="app">
-        <universites></universites>
-        <departements></departements>
+        <universites :universites="{{ $universites }}"></universites>
     </div>
-    
+
 </body>
 
 <script src="{{ asset('js/app.js') }}"></script>
