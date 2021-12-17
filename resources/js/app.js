@@ -2,6 +2,10 @@ require('./bootstrap');
 
 import {createApp} from 'vue';
 
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css'
+
+
 import application from './components/app.vue';
 
 import Universites from './components/universites/liste.vue';
