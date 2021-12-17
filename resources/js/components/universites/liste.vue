@@ -1,11 +1,11 @@
-<template lang="">
+<template lang="html">
 
     <div class="card m-5">
       <div class="card-body">
         <div class="card">
           <div class="card-header">Liste des Universités</div>
-          <div class="card-body">
-            <table class="table table-bordered table-striped">
+          <div class="card-body text-black-50">
+            <table class="table table-bordered ">
               <tr>
                 <th>ID</th>
                 <th>Libelle</th>
@@ -31,4 +31,14 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style lang="css">
+
+  .table{
+    color: gray;
+  }
+
+  .card-header{
+    background: rgb(54, 141, 212);;
+  }
+
+</style>
